@@ -2,27 +2,6 @@
   background-image: url("../../../assets/images/banners/banner2.jpg");
 }
 
-.test {
-  position: absolute;
-  top: 200px;
-  right: 282px;
-}
-
-.test1 {
-  top: 200px;
-  right: 200px;
-}
-
-.test2 {
-  top: 100px;
-  right: 340px;
-}
-
-.test3 {
-  top: 200px;
-  left: 282px;
-}
-
 ///
 .employee-wrapper {
   display: flex;
@@ -59,8 +38,6 @@
     height: 340px;
     display: block;
     transition: 0.3s ease-in-out;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
     &:hover {
       top: -2px;
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -131,6 +108,7 @@
         width: 30px;
         height: 30px;
         display: block;
+        fill: #585657;
       }
     }
   }

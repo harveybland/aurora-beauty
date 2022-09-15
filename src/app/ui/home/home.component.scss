@@ -12,6 +12,11 @@ button {
   border: none;
 }
 
+.top-banner {
+  background-image: url("../../../assets/images/banners/facial2.jpg");
+  height: 100vh;
+}
+
 .home-banner {
   background-color: #ede9e6;
   text-align: center;
@@ -99,42 +104,6 @@ button {
   }
 }
 
-.home-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 20px;
-  align-items: flex-start;
-  background-color: #fff;
-  border-bottom-left-radius: 6px;
-  .home-block-info {
-    border-bottom-left-radius: 6px;
-    span {
-      color: #edb200;
-    }
-    div {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      font-size: 1rem;
-    }
-  }
-  h2 {
-    margin-bottom: 15px;
-  }
-  .treatment-button {
-    margin-top: 20px;
-    p {
-      display: flex;
-    }
-    svg {
-      width: 30px;
-      height: 30px;
-      display: block;
-    }
-  }
-}
-
 .fadeIn {
   opacity: 0;
   transform: translate(0, 35px);
@@ -142,22 +111,6 @@ button {
   &.on {
     opacity: 1;
     transform: translate(0, 0);
-  }
-}
-
-.home-block-video {
-  position: relative;
-  img {
-    display: block;
-    border-bottom-right-radius: 6px;
-    width: 350px;
-    .overlay {
-      opacity: 0.1;
-    }
-  }
-  button {
-    display: block;
-    cursor: pointer;
   }
 }
 
@@ -170,30 +123,31 @@ button {
   background-color: #fff;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  opacity: 0.4;
-  width: 100%;
-  background-color: #585657;
-  transition: 0.5s ease;
-  border-bottom-right-radius: 6px;
-  div {
-    position: absolute;
-    top: 37%;
-    left: 39%;
-    font-size: 1.4rem;
-    color: #eee;
-    background: #2c2c2c;
-    border-radius: 50%;
-    padding: 8px 18px 8px 25px;
-  }
-  &:hover {
-    opacity: 0.8;
+.home-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  .home-cards-item {
+    display: flex;
+    flex-direction: column;
+    .home-cards-img {
+      height: 200px;
+      width: 280px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &.img1 {
+        background-image: url("../../../assets/images/banners/banner2.jpg");
+      }
+      &.img2 {
+        background-image: url("../../../assets/images/treatments/healthcare.jpg");
+      }
+      &.img3 {
+        background-image: url("../../../assets/images/banners/banner1.jpg");
+      }
+    }
   }
 }
 
@@ -270,10 +224,6 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
-  .home-block {
-    padding: 0;
-  }
-
   .home-wrapper {
     padding: 20px;
     margin: 60px 0 90px;
@@ -285,16 +235,5 @@ button {
 
   .home-banner .home-banner-inner {
     display: none;
-  }
-
-  .home-block {
-    .home-block-info {
-      div {
-        font-size: 0.9rem;
-      }
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
   }
 }

@@ -1,4 +1,6 @@
+import { ModalComponent } from './modal/modal.component';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,12 +10,15 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public _router: Router) { }
+  observer: any;
+
+  constructor(public _router: Router,
+    public dialog: MatDialog) { }
 
 
   ngOnInit() {
     window.scrollTo(0, 0);
-    this.animation()
+    this.animation();
   }
 
   animation() {
@@ -48,6 +53,31 @@ export class HomeComponent implements OnInit {
     function removeActiveClass(element: any) {
       element.classList.remove('on');
     }
+  }
+
+  triggerModal() {
+    const options = {
+      threshold: [0, 1],
+      rootMargin: '0px',
+    };
+
+    this.observer = new IntersectionObserver(function (this: any, entries) {
+      if (entries[0].isIntersecting == false) {
+        console.log(1)
+      } else {
+        console.log(2)
+      }
+    }, options);
+
+    const element1 = document.querySelector('.trigger');
+    this.observer.observe(element1);
+  }
+
+  openDialog() {
+    const dialog = this.dialog.open(ModalComponent, {
+      maxWidth: '768px',
+      data: {}
+    });
   }
 
 }

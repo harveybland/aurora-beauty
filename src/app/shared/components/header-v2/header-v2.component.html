@@ -1,10 +1,6 @@
-<nav>
-  <div>
-    <img
-      class="logo"
-      src="assets/images/shared/logo6.png"
-      alt="aurora beauty logo"
-    />
+<nav class="nav">
+  <div class="logo">
+    <img class="logo" src="assets/images/shared/Logo2-removebg-previeww.png" alt="aurora beauty logo" />
   </div>
   <div class="hamburger" [ngClass]="active ? 'toggle' : ''" (click)="burger()">
     <div class="bars1"></div>
@@ -28,12 +24,7 @@
       <a routerLink="/contact" (click)="setNav()">Contact</a>
     </li>
     <li [ngClass]="active ? 'fade' : ''">
-      <a
-        class="contact-button"
-        href="https://aurorabeautyclitheroe.book.app/book-now"
-        target="_blank"
-        >Book now</a
-      >
+      <a class="contact-button" href="https://aurorabeautyclitheroe.book.app/book-now" target="_blank">Book now</a>
     </li>
   </ul>
 </nav>
