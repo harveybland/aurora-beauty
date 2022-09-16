@@ -1,5 +1,5 @@
 import { ModalComponent } from './modal/modal.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
@@ -9,8 +9,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  observer: any;
 
   constructor(public _router: Router,
     public dialog: MatDialog) { }
@@ -55,28 +53,17 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  triggerModal() {
-    const options = {
-      threshold: [0, 1],
-      rootMargin: '0px',
-    };
-
-    this.observer = new IntersectionObserver(function (this: any, entries) {
-      if (entries[0].isIntersecting == false) {
-        console.log(1)
-      } else {
-        console.log(2)
-      }
-    }, options);
-
-    const element1 = document.querySelector('.trigger');
-    this.observer.observe(element1);
-  }
+  // @HostListener("document:scroll")
+  // scrollfunction() {
+  //   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1000) {
+  //     this.openDialog();
+  //     this.scrollfunction = function () { }
+  //   }
+  // }
 
   openDialog() {
-    const dialog = this.dialog.open(ModalComponent, {
-      maxWidth: '768px',
-      data: {}
+    this.dialog.open(ModalComponent, {
+      maxWidth: '768px'
     });
   }
 

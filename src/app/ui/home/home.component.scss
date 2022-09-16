@@ -20,11 +20,27 @@ button {
 .home-banner {
   background-color: #ede9e6;
   text-align: center;
-  padding: 28px;
   margin-bottom: 60px;
-  color: #79553d;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .home-banner-img {
+    padding: 80px 0;
+    .home {
+      background-image: url("../../../assets/images/banners/room-space.jpg");
+      background-size: contain;
+      height: 280px;
+      padding-top: 20px;
+    }
+  }
+
+  .home-banner-text {
+    display: flex;
+    background: #fff;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
   .home-banner-inner {
     display: flex;
@@ -32,7 +48,9 @@ button {
     align-items: center;
     flex-direction: column;
     p {
-      margin-top: 5px;
+      color: #79553d;
+      font-weight: 600;
+      font-size: 1rem;
     }
   }
 
@@ -44,11 +62,6 @@ button {
   p {
     margin-top: 15px;
     font-size: 1rem;
-  }
-  .home {
-    background-image: url("../../../assets/images/banners/room-space.jpg");
-    background-size: contain;
-    height: 230px;
   }
 }
 
@@ -129,12 +142,14 @@ button {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 60px;
   .home-cards-item {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 13%);
     .home-cards-img {
       height: 200px;
-      width: 280px;
+      width: 100%;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -146,6 +161,19 @@ button {
       }
       &.img3 {
         background-image: url("../../../assets/images/banners/banner1.jpg");
+      }
+    }
+    .home-cards-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        max-width: 300px;
       }
     }
   }
