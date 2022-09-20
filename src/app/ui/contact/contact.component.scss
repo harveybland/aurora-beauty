@@ -176,6 +176,7 @@
 @media screen and (max-width: 1005px) {
   .template-hour {
     grid-template-columns: 1fr repeat(7, 110px);
+    top: 79px;
   }
 
   .template-hours-info {

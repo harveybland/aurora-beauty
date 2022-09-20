@@ -1,6 +1,9 @@
 <div class="home-wrapper box-shadow animation fadeIn">
   <div class="home-block">
     <div class="home-block-info">
+      <div class="close">
+        <button (click)="this.dialogRef.close()">Close</button>
+      </div>
       <h2>New! <span>Wellness Pamper Package</span></h2>
       <div>
         Since 1974 we have listened to our experts when designing and creating
@@ -13,10 +16,12 @@
         and will continue to be an irreplaceable and unique piece of Decléor.
       </div>
       <div>
-        Watch a short video on tiktok to show the experience.&nbsp;
-        <a href="https://www.tiktok.com/@melissabland28/video/7090609734591532294?is_copy_url=1&is_from_webapp=v1&lang=en"
+        Watch a short video on
+        <a class="video"
+          href="https://www.tiktok.com/@melissabland28/video/7090609734591532294?is_copy_url=1&is_from_webapp=v1&lang=en"
           target="_blank">
-        </a>
+          tiktok
+        </a>to see the experience.
       </div>
       <div class="treatment-button">
         <a class="btn" href="https://aurorabeautyclitheroe.book.app/book-now">

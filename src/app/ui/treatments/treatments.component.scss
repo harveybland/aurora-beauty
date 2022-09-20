@@ -15,7 +15,7 @@
   padding: 15px 20px;
   background: #ffcd36;
   color: #000;
-  top: 97px;
+  top: 96px;
   z-index: 1;
   position: sticky;
   border-radius: 4px;
@@ -121,6 +121,12 @@
       visibility: visible;
       z-index: 2;
     }
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .template-header {
+    top: 79px;
   }
 }
 
