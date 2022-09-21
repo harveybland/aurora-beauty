@@ -8,28 +8,23 @@ nav {
   // height: 6.6rem;
   justify-content: space-between;
   align-items: center;
-  // background-color: #fff;
-  transition: all ease-in-out 150ms;
   &.nav-color {
-    transition: all ease-in-out 150ms;
+    transition: all ease-in-out 400ms; ///
     color: #eee;
     background-color: #585657;
-    // border-top: 10px solid #ffcd36;
   }
 }
 
 .logo {
-  padding-bottom: 5px;
   img {
-    width: 270px;
     height: 75px;
     display: block;
     padding-left: 20px;
+    padding-bottom: 3px;
   }
 }
 
 /* Styling Navigation Links*/
-
 .nav-links {
   display: flex;
   padding: 0 0.7vw;
@@ -43,7 +38,6 @@ nav {
 .nav-links li a {
   margin: 0 0.7vw;
   text-decoration: none;
-  transition: all ease-in-out 150ms;
   padding: 10px;
   margin: 0;
   height: 97px;
@@ -51,28 +45,30 @@ nav {
   align-items: center;
 }
 
-// .nav-links {
-//   li:last-child {
-//     &:hover {
-//       border-bottom: solid transparent 5px;
-//       color: #eee;
-//     }
-//   }
-// }
+// removes hover on last element
+.nav-links {
+  li.nav-link-color:last-child {
+    &:hover {
+      border-bottom: solid transparent 5px;
+      color: #eee;
+    }
+  }
+}
 
 .nav-links li {
   position: relative;
   height: 97px;
   display: flex;
   align-items: center;
-  transition: all ease-in-out 150ms;
   border: 5px solid transparent;
   cursor: pointer;
   &.nav-link-color:hover {
+    transition: all ease-in-out 400ms; ////
     border-bottom: solid #ffcd36 5px;
     color: #ffcd36;
   }
   &.nav-link-color.is-active {
+    transition: all ease-in-out 400ms; ///
     border-bottom: solid #ffcd36 5px;
     color: #ffcd36;
   }
@@ -103,15 +99,13 @@ nav {
   border: 2px solid #585657;
   border-radius: 2em;
   height: auto !important;
-  transition: all ease-in-out 150ms;
+  transition: all ease-out 400ms;
   &.contact-button-color {
     border: 2px solid #f2f5f7;
-    transition: all ease-in-out 150ms;
   }
 }
 
 .contact-button-color:hover {
-  transition: all ease-in-out 150ms;
   color: #000;
   background-color: #ffcd36 !important;
   border: 2px solid #ffcd36;
@@ -139,7 +133,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 900px) {
   nav {
     position: fixed;
     justify-content: space-between;

@@ -124,6 +124,16 @@
   }
 }
 
+.btn {
+  &:hover {
+    fill: #fff;
+    svg {
+      color: #fff;
+      fill: #fff;
+    }
+  }
+}
+
 @media screen and (max-width: 945px) {
   .template-header {
     top: 79px;
