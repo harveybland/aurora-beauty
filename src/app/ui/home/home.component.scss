@@ -244,6 +244,14 @@ button {
 
 .review-wrapper {
   margin: 30px 0 70px;
+  div:nth-child(1) {
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ffcd36;
+      padding-bottom: 7px;
+    }
+  }
   .carousel-review {
     box-shadow: 0 2px 5px rgb(0 0 0 / 0.15);
     padding: 18px;
@@ -330,8 +338,11 @@ button {
     grid-template-columns: 1fr;
     .home-banner-img {
       padding: 20px 20px 50px;
+      img {
+        height: 240px;
+      }
       h2 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       }
     }
 
