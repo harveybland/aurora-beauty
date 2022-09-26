@@ -137,6 +137,9 @@ nav {
   nav {
     position: fixed;
     justify-content: space-between;
+    &.nav-color {
+      padding-bottom: 7px;
+    }
     a {
       font-size: 21px;
     }
