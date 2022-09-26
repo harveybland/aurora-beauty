@@ -131,7 +131,7 @@
   padding: 15px 0px 15px 20px;
   background: #ffcd36;
   color: #000;
-  top: 97px;
+  top: 95px;
   z-index: 3;
   position: sticky;
   border-radius: 4px;
@@ -176,11 +176,16 @@
 @media screen and (max-width: 1005px) {
   .template-hour {
     grid-template-columns: 1fr repeat(7, 110px);
-    top: 79px;
   }
 
   .template-hours-info {
     grid-template-columns: 1fr repeat(7, 110px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .template-hour {
+    top: 81px;
   }
 }
 
@@ -206,5 +211,11 @@
   }
   .contact-form form {
     margin: 20px 00px 0 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .template-hour {
+    top: 66px;
   }
 }

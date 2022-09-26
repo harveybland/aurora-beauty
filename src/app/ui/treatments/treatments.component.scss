@@ -134,9 +134,9 @@
   }
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 900px) {
   .template-header {
-    top: 79px;
+    top: 81px;
   }
 }
 
@@ -211,6 +211,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .template-header {
+    top: 66px;
+  }
+
   .sub-menu-wrapper .sub-menu button {
     font-size: 0.8rem;
     padding: 10px;

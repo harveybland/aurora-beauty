@@ -147,8 +147,7 @@ button {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 90px;
-  padding-top: 60px;
+  padding: 60px 20px;
   background: #ede9e6;
   .home-cards-item {
     display: flex;
@@ -185,10 +184,20 @@ button {
       padding: 20px;
       background-color: #fff;
       h2 {
-        margin-bottom: 10px;
+        width: 220px;
+        text-align: center;
+        border-bottom: 3px solid #e0bdb9;
+        line-height: 0.1em;
+        font-size: 1.4rem;
+        margin: 10px 0 25px;
+        span {
+          background: #fff;
+          padding: 0 10px;
+        }
       }
       p {
         max-width: 300px;
+        font-size: 1rem;
       }
     }
   }
@@ -280,6 +289,10 @@ button {
     overflow-x: scroll;
     grid-template-columns: none;
     justify-content: normal;
+
+    img {
+      filter: grayscale(0);
+    }
 
     .gallery-img {
       filter: grayscale(0);

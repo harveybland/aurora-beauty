@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit {
 
   @HostListener("document:scroll")
   scrollfunction() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1300) {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1600) {
       this.openDialog();
       this.scrollfunction = function () { }
     }
