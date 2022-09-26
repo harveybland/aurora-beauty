@@ -238,6 +238,10 @@ button {
   }
 }
 
+.gallery-padding {
+  display: none;
+}
+
 .review-wrapper {
   margin: 30px 0 70px;
   .carousel-review {
@@ -285,22 +289,30 @@ button {
   .gallery-grid {
     grid-auto-flow: column;
     grid-auto-columns: 90%;
-    -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
+    padding-bottom: 20px;
     grid-template-columns: none;
     justify-content: normal;
 
-    img {
+    &:hover img {
       filter: grayscale(0);
     }
 
-    .gallery-img {
-      filter: grayscale(0);
+    &:hover {
+      .gallery-img {
+        filter: grayscale(0);
+      }
     }
   }
   .gallery-grid::-webkit-scrollbar-thumb {
     background: red;
     border-radius: 10px;
+  }
+
+  .gallery-padding {
+    display: block;
+    padding-top: 60px;
+    background-color: #ede9e6;
   }
 }
 
