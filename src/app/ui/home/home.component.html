@@ -7,9 +7,9 @@
     </h1>
     <img src="../../../assets/images/shared/Logo2-removebg-previeww.png" alt="" srcset="">
   </div> -->
-  <video style="width: 100%; height: 100vh; object-fit: cover;" autoplay="autoplay" loop="loop" muted defaultMuted
-    playsinline oncontextmenu="return false;" preload="auto" id="myVideo"
-    src="../../../assets/video/pexels-ivan-samkov-5659264.mp4">
+  <video style="width: 100%; height: 100vh; object-fit: cover;" autoplay loop muted playsinline oncanplay="this.play()"
+    onloadedmetadata="this.muted = true" id="myVideo" type="video/mp4">
+    <source src="../../../assets/video/pexels-ivan-samkov-5659264.mp4">
   </video>
 </div>
 
@@ -180,32 +180,40 @@
     <ngx-glide type="carousel" [perView]="4" [autoplay]="3000" [showBullets]="false" [showArrows]="false"
       [hoverpause]="false" [breakpoints]="{ '510': { perView: 1 }, '768': { perView: 2 }, '1090': { perView: 3 } }">
       <div class="carousel-review">
-        <h2>Naomi Annie Warren</h2>
-        <p>
-          I had a back, neck and head massage with Melissa and felt like I was
-          floating afterwards! Absolutely amazing!!
-        </p>
+        <div>
+          <h2>Naomi Annie Warren</h2>
+          <p>
+            I had a back, neck and head massage with Melissa and felt like I was
+            floating afterwards! Absolutely amazing!!
+          </p>
+        </div>
         <span>10 days ago</span>
       </div>
       <div class="carousel-review">
-        <h2>Gail Kellington</h2>
-        <p>
-          Love going to Aurora Beauty. It's a gorgeous salon, treatments are 👌🏻
-          Highly recommend going!
-        </p>
+        <div>
+          <h2>Gail Kellington</h2>
+          <p>
+            Love going to Aurora Beauty. It's a gorgeous salon, treatments are 👌🏻
+            Highly recommend going!
+          </p>
+        </div>
         <span>1 month ago</span>
       </div>
       <div class="carousel-review">
-        <h2>Fiona Mercer</h2>
-        <p>
-          I go to Aurora for a monthly swedish massage with Melissa. Brilliant
-          service, a lovely place to visit and Melissa is wonderful!
-        </p>
+        <div>
+          <h2>Fiona Mercer</h2>
+          <p>
+            I go to Aurora for a monthly swedish massage with Melissa. Brilliant
+            service, a lovely place to visit and Melissa is wonderful!
+          </p>
+        </div>
         <span>2 months ago</span>
       </div>
       <div class="carousel-review">
-        <h2>Livvie Sheryn</h2>
-        <p>Such a personal experience - couldn't recommend more!</p>
+        <div>
+          <h2>Livvie Sheryn</h2>
+          <p>Such a personal experience - couldn't recommend more!</p>
+        </div>
         <span>3 weeks ago</span>
       </div>
     </ngx-glide>

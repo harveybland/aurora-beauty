@@ -38,6 +38,7 @@
     height: 340px;
     display: block;
     transition: 0.3s ease-in-out;
+    object-fit: cover;
     &:hover {
       top: -2px;
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);

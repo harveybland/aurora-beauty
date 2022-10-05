@@ -243,11 +243,11 @@ button {
 }
 
 .review-wrapper {
-  margin: 30px 0 70px;
-  div:nth-child(1) {
+  margin: 50px 0 70px;
+  .flex {
     h2 {
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       border-bottom: 2px solid #ffcd36;
       padding-bottom: 7px;
     }
@@ -259,6 +259,7 @@ button {
     display: flex;
     flex-direction: column;
     position: relative;
+    justify-content: space-between;
     transition: all 0.1s ease-in;
     top: 0;
     background: #f7f7f7;
@@ -376,5 +377,53 @@ button {
 
   .carousel-item1 h1 {
     font-size: 1.6rem;
+  }
+
+  .home-cards {
+    .home-cards-item {
+      .home-cards-text {
+        h2 {
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .home-banner {
+    .home-banner-text {
+      padding: 70px 20px;
+    }
+
+    .home-banner-inner {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .review-wrapper {
+    .flex {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+    .carousel-review {
+      h2 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
   }
 }
