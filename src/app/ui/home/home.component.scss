@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variables.scss";
+
 .main {
   height: 25vh;
   display: flex;
@@ -55,7 +57,7 @@ button {
     p {
       color: #79553d;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: var(--p-desktop);
     }
   }
 
@@ -66,7 +68,7 @@ button {
   }
   p {
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: var(--p-desktop);
   }
 }
 
@@ -197,7 +199,7 @@ button {
       }
       p {
         max-width: 300px;
-        font-size: 1rem;
+        font-size: var(--p-desktop);
       }
     }
   }
@@ -250,6 +252,7 @@ button {
       margin-bottom: 30px;
       border-bottom: 2px solid #ffcd36;
       padding-bottom: 7px;
+      font-size: var(--h2-desktop);
     }
   }
   .carousel-review {
@@ -265,12 +268,12 @@ button {
     background: #f7f7f7;
     border: 8px;
     h2 {
-      font-size: 1.2rem;
+      font-size: var(--h2-desktop);
       margin-bottom: 8px;
     }
     p {
       white-space: normal;
-      font-size: 1rem;
+      font-size: var(--p-desktop);
     }
     span {
       margin-top: 15px;
@@ -383,10 +386,10 @@ button {
     .home-cards-item {
       .home-cards-text {
         h2 {
-          font-size: 1.3rem;
+          font-size: var(--h2-mobile);
         }
         p {
-          font-size: 0.9rem;
+          font-size: var(--p-mobile);
         }
       }
     }
@@ -399,15 +402,15 @@ button {
 
     .home-banner-inner {
       p {
-        font-size: 0.9rem;
+        font-size: var(--p-mobile);
       }
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: var(--h2-mobile);
     }
     p {
-      font-size: 0.9rem;
+      font-size: var(--p-mobile);
     }
   }
 
@@ -419,10 +422,10 @@ button {
     }
     .carousel-review {
       h2 {
-        font-size: 1.1rem;
+        font-size: var(--h2-mobile);
       }
       p {
-        font-size: 0.9rem;
+        font-size: var(--p-mobile);
       }
     }
   }

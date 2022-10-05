@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .max-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,7 +50,7 @@
     border-bottom: 2px solid #ffcd36;
     padding-bottom: 7px;
   }
-  div {
+  p {
     color: #585657;
     margin-bottom: 17px;
     line-height: 1.3;
@@ -127,14 +129,14 @@
 @media screen and (max-width: 480px) {
   .text {
     h1 {
-      font-size: 1.5rem;
+      font-size: var(--h1-mobile);
     }
-    div {
-      font-size: 0.9rem;
+    p {
+      font-size: var(--p-mobile);
     }
   }
 
   .btn {
-    font-size: 1rem;
+    font-size: var(--button-fs);
   }
 }
