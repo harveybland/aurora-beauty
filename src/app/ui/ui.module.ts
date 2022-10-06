@@ -22,6 +22,10 @@ const routes: Routes = [
         loadChildren: () => import('./treatments/treatments.module').then(o => o.TreatmentsModule),
       },
       {
+        path: 'skincare',
+        loadChildren: () => import('./skincare/skincare.module').then(o => o.SkincareModule),
+      },
+      {
         path: 'decleor',
         loadChildren: () => import('./decleor/decleor.module').then(o => o.DecleorModule),
       },

@@ -63,27 +63,46 @@ nav {
   border: 5px solid transparent;
   cursor: pointer;
   &.nav-link-color:hover {
-    transition: all ease-in-out 400ms; ////
-    border-bottom: solid #ffcd36 5px;
     color: #ffcd36;
+    transition: all ease-in-out 400ms;
+  }
+  &.nav-link-color::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    width: 20%;
+    border-bottom: 3px solid;
+    z-index: 1;
+    opacity: 0;
+    transition: width 0.5s ease, opacity 0.3s ease;
+  }
+  &.nav-link-color:hover:nth-child(7)::after {
+    content: none;
+  }
+  &.nav-link-color:hover::after {
+    width: 100%;
+    opacity: 1;
   }
   &.nav-link-color.is-active {
-    transition: all ease-in-out 400ms; ///
-    border-bottom: solid #ffcd36 5px;
     color: #ffcd36;
   }
+  &.nav-link-color.is-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    top: 3em;
+    width: 100%;
+    border-bottom: 3px solid;
+    z-index: 1;
+    opacity: 1;
+  }
 }
-
-// .nav-link-color {
-//   &:hover {
-//     border-bottom: solid #ffcd36 5px;
-//     color: #ffcd36;
-//   }
-//   &.is-active {
-//     border-bottom: solid #ffcd36 5px;
-//     color: #ffcd36;
-//   }
-// }
 
 .nav-links li a:hover::before {
   width: 80%;
