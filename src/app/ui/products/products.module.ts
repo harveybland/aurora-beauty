@@ -1,12 +1,12 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DecleorComponent } from './decleor.component';
+import { ProductsComponent } from './products.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DecleorComponent,
+    component: ProductsComponent,
   }
 ];
 
@@ -15,6 +15,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
   ],
-  declarations: [DecleorComponent]
+  declarations: [ProductsComponent]
 })
-export class DecleorModule { }
+export class ProductsModule { }
