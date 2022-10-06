@@ -152,7 +152,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1115px) {
   nav {
     position: fixed;
     justify-content: space-between;
@@ -199,7 +199,7 @@ nav {
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1216px at 90% -10%);
+    clip-path: circle(1396px at 90% -10%);
     pointer-events: all;
   }
   .nav-links li {
