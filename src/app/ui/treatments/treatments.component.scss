@@ -6,15 +6,6 @@
 
 .template-wrapper {
   box-shadow: 0 4px 5px rgb(0 0 0 / 13%);
-  margin-bottom: 60px;
-}
-
-.treatment-block {
-  display: flex;
-
-  .treatment-inner {
-    flex: 1;
-  }
 }
 
 .template-header {
@@ -27,10 +18,6 @@
   z-index: 1;
   position: sticky;
   border-radius: 4px;
-  &.massage {
-    grid-template-columns: 1fr 160px 160px;
-    font-size: 1.2rem;
-  }
 }
 
 .pink {
@@ -48,9 +35,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  &.massage {
-    grid-template-columns: 1fr 160px 160px 160px;
   }
 }
 
@@ -113,6 +97,57 @@
   }
 }
 
+//// new
+.treatment-block {
+  display: flex;
+  margin: 60px 0;
+
+  .treatment-inner {
+    flex: 1;
+    padding: 0 20px;
+    p {
+      padding: 15px 0;
+      line-height: 1.4em;
+    }
+  }
+}
+
+.hand {
+  flex: 1;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../assets/images/treatments/massage/hand2.jpg");
+}
+
+.brows {
+  flex: 1;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../assets/images/treatments/lashes/brows2.jpg");
+}
+
+.waxing {
+  flex: 1;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../assets/images/treatments/waxing.jpg");
+}
+
+.massage {
+  flex: 1;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../assets/images/treatments/massage/back.jpg");
+}
+
 @media screen and (max-width: 900px) {
   .template-header {
     top: 81px;
@@ -120,13 +155,6 @@
 }
 
 @media screen and (max-width: 660px) {
-  .template-header.massage {
-    font-size: 1rem;
-  }
-  .template-info.massage {
-    font-size: 1rem;
-  }
-
   .template-header {
     font-size: 1rem;
   }
@@ -156,12 +184,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .template-header.massage {
-    font-size: 0.9rem;
-  }
-  .template-info.massage {
-    font-size: 0.9rem;
-  }
   .template-info {
     font-size: 0.9rem;
   }
