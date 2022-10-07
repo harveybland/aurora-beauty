@@ -10,6 +10,13 @@
   color: #585657;
 }
 
+video {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
 button {
   border: none;
 }
@@ -20,7 +27,7 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 30px 0;
+  margin: 40px 0 30px;
 }
 
 .home-banner {
@@ -221,7 +228,7 @@ button {
   display: grid;
   background-color: #ede9e6;
   grid-auto-flow: initial;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 23em));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 30em));
   grid-gap: 1em;
   justify-content: center;
   transition: 0.3s;
@@ -232,7 +239,7 @@ button {
 
   .gallery-grid__div {
     display: grid;
-    grid-template-rows: 23em 1fr;
+    grid-template-rows: 30em 1fr;
     cursor: pointer;
 
     img {
