@@ -12,15 +12,11 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: 15px 20px;
-  background: #ffcd36;
   color: #000;
   top: 96px;
   z-index: 1;
   position: sticky;
   border-radius: 4px;
-}
-
-.pink {
   background-color: #e0bdb9;
 }
 
@@ -50,7 +46,7 @@
     box-shadow: 0px -5px 25px #00000029;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    max-width: 710px;
+    max-width: 590px;
     margin: 0 auto;
     transform: translateX(100%);
     opacity: 0;
@@ -64,11 +60,11 @@
       padding: 20px;
       cursor: pointer;
       &:hover {
-        background: #ffcd36;
+        background-color: #e0bdb9;
       }
     }
     .active {
-      background: #ffcd36;
+      background-color: #e0bdb9;
     }
     button:nth-child(1) {
       border-top-left-radius: 5px;
@@ -98,6 +94,34 @@
 }
 
 //// new
+// .carousel-bannner {
+//   width: 600px;
+//   overflow: hidden;
+// }
+
+// .banner {
+//   width: 100%;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .carousel-item1 {
+//   background-image: url("../../../assets/images/treatments/nails/nails1.jpg");
+// }
+
+// .carousel-item2 {
+//   background-image: url("../../../assets/images/treatments/nails/nails2.jpg");
+// }
+
+// .carousel-item3 {
+//   background-image: url("../../../assets/images/treatments/nails/nails3.jpg");
+// }
+
+// .carousel-item4 {
+//   background-image: url("../../../assets/images/treatments/nails/nails5.jpeg");
+// }
+
 .treatment-block {
   display: flex;
   margin: 60px 0;
@@ -117,40 +141,27 @@
   }
 }
 
-.hand {
+.image {
   flex: 1;
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../../../assets/images/treatments/massage/hand.jpg");
-}
+  &.hand {
+    background-image: url("../../../assets/images/treatments/massage/hand.jpg");
+  }
 
-.brows {
-  flex: 1;
-  width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../../assets/images/treatments/lashes/brows2.jpg");
-}
+  &.brows {
+    background-image: url("../../../assets/images/treatments/lashes/brows2.jpg");
+  }
 
-.waxing {
-  flex: 1;
-  width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../../assets/images/treatments/waxing.jpg");
-}
+  &.waxing {
+    background-image: url("../../../assets/images/treatments/waxing.jpg");
+  }
 
-.massage {
-  flex: 1;
-  width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../../../assets/images/treatments/massage/beauty-spa.jpg");
+  &.massage {
+    background-image: url("../../../assets/images/treatments/massage/beauty-spa-min.jpg");
+  }
 }
 
 @media screen and (max-width: 1514px) {
