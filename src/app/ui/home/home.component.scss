@@ -219,9 +219,22 @@ button {
   }
 }
 
+// skincare
+.skincare {
+  div {
+    display: flex;
+    div {
+      flex: 1;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
 // Gallery
 .gallery-container {
-  padding: 5em 1em;
+  padding: 3.5em 1em 5em;
   background-color: #ede9e6;
 }
 .gallery-grid {
