@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
@@ -9,7 +10,9 @@ export class TreatmentsComponent implements OnInit, OnDestroy {
 
   observer: any;
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Beauty Treatments - Aurora Beauty");
+  }
 
   ngOnInit() {
     window.scrollTo(0, 0);

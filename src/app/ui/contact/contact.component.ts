@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
@@ -22,7 +23,9 @@ export class ContactComponent implements OnInit {
   markerOptions!: google.maps.MarkerOptions;
   markerPosition!: google.maps.LatLngLiteral;
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Contact Us - Aurora Beauty");
+  }
 
   ngOnInit() {
     window.scrollTo(0, 0);

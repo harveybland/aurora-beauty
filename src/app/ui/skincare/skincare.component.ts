@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-skincare',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkincareComponent implements OnInit {
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("Skincare - Aurora Beauty");
+  }
 
   ngOnInit(): void {
     window.scrollTo(0, 0);

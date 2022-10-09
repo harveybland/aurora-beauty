@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private titleService: Title) {
+    this.titleService.setTitle("About Us - Aurora Beauty");
+  }
 
   ngOnInit() {
     window.scrollTo(0, 0);
