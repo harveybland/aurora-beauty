@@ -9,6 +9,8 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ContactComponent implements OnInit {
 
+  // AIzaSyCy3Cj9bnrcOQlHAWo3YF_4wzLGag6uQZ8
+
   zoom = 15;
   center!: google.maps.LatLngLiteral;
   markers: any;
