@@ -37,7 +37,7 @@ button {
   grid-template-columns: 1fr 1fr;
 
   .home-banner-img {
-    padding: 0 20px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -49,14 +49,22 @@ button {
     }
   }
 
-  .home-banner-text {
-    display: flex;
-    background: #fff;
-    padding: 100px 20px;
-    align-items: center;
-    justify-content: space-evenly;
+  .home-banner-right {
+    background-color: #fff;
+    padding: 30px 20px 40px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+    .home-banner-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  .home-banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .home-banner-inner {
