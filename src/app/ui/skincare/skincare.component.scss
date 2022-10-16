@@ -15,7 +15,7 @@
 }
 
 .container {
-  margin: 30px 0;
+  margin: 40px 0;
   h2 {
     font-size: var(--h2-desktop);
     margin-bottom: 15px;
@@ -37,13 +37,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 20px;
   }
   ul {
     flex: 1;
     li {
       display: flex;
-      align-items: center;
-      margin-bottom: 5px;
+      align-items: flex-start;
+      margin-bottom: 7px;
+      line-height: 1.4em;
       span {
         margin-right: 5px;
         color: #ebbdbd;
@@ -64,11 +66,15 @@
   gap: 30px;
   margin-top: 20px;
   div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     background-color: #ececec;
     padding: 40px;
     width: 50%;
     border-radius: 6px;
-    text-align: center;
     p {
       line-height: 1.4em;
       margin: 5px 0 5px;
@@ -86,9 +92,10 @@
 }
 
 .block {
+  display: flex;
+  justify-content: space-evenly;
   background-color: #ececec;
-  padding: 40px;
-  width: 50%;
+  padding: 20px;
   border-radius: 6px;
   text-align: center;
   p {
@@ -144,5 +151,30 @@
   z-index: 1;
   &.on {
     transform: translate(0, 0);
+  }
+}
+
+.fade-left {
+  transform: translate(45px, 0);
+  transition: all 0.7s;
+  position: relative;
+  z-index: 1;
+  &.on {
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blocks {
+    justify-content: flex-start;
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
   }
 }

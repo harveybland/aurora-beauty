@@ -156,7 +156,8 @@ nav {
     position: fixed;
     justify-content: space-between;
     &.nav-color {
-      padding-bottom: 7px;
+      padding-bottom: 11px;
+      padding-top: 7px;
     }
     a {
       font-size: 21px;
@@ -246,6 +247,12 @@ nav {
 
   .toggle .bars3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .logo {
+    img {
+      padding-left: 15px;
+    }
   }
 }
 
