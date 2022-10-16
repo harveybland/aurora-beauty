@@ -46,21 +46,20 @@ nav {
 }
 
 // removes hover on last element
-.nav-links {
-  li.nav-link-color:last-child {
-    &:hover {
-      border-bottom: solid transparent 5px;
-      color: #eee;
-    }
-  }
-}
+// .nav-links {
+//   li.nav-link-color:last-child {
+//     &:hover {
+//       border-bottom: solid transparent 5px;
+//       color: #eee;
+//     }
+//   }
+// }
 
 .nav-links li {
   position: relative;
   height: 97px;
   display: flex;
   align-items: center;
-  border: 5px solid transparent;
   cursor: pointer;
   &.nav-link-color:hover {
     color: #ffcd36;
@@ -71,7 +70,7 @@ nav {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -5px;
+    bottom: 0px;
     margin: auto;
     width: 20%;
     border-bottom: 3px solid;
@@ -94,7 +93,7 @@ nav {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -5px;
+    bottom: 0px;
     margin: auto;
     top: 3em;
     width: 100%;
@@ -152,7 +151,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 900px) {
   nav {
     position: fixed;
     justify-content: space-between;
@@ -191,19 +190,21 @@ nav {
     z-index: 1;
     top: 0;
     height: 100vh;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 100%;
     flex-direction: column;
     clip-path: circle(50px at 90% -20%);
     transition: all 1s ease-out;
     pointer-events: none;
+    padding-top: 80px;
   }
   .nav-links.open {
-    clip-path: circle(1396px at 90% -10%);
+    clip-path: circle(1310px at 90% -10%);
     pointer-events: all;
   }
   .nav-links li {
     opacity: 0;
+    margin-bottom: 20px;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
