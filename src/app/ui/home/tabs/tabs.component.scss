@@ -1,122 +1,122 @@
-.gallary-wrapper {
-  margin: 10px 0 20px;
-  .gallary {
-    display: grid;
-    grid-column-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 370px;
-    overflow: hidden;
-  }
-}
+// .gallary-wrapper {
+//   margin: 10px 0 20px;
+//   .gallary {
+//     display: grid;
+//     grid-column-gap: 20px;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     height: 370px;
+//     overflow: hidden;
+//   }
+// }
 
-.tab-image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 7px;
-}
+// .tab-image {
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   border-radius: 7px;
+// }
 
-::ng-deep {
-  // tab animation
-  // .mat-tab-body {
-  //   animation: fade-out 0.5s;
-  //   opacity: 0;
-  // }
-  // .mat-tab-body.mat-tab-body-active {
-  //   animation: fade-in 0.5s;
-  //   opacity: 1;
-  // }
+// ::ng-deep {
+//   // tab animation
+//   // .mat-tab-body {
+//   //   animation: fade-out 0.5s;
+//   //   opacity: 0;
+//   // }
+//   // .mat-tab-body.mat-tab-body-active {
+//   //   animation: fade-in 0.5s;
+//   //   opacity: 1;
+//   // }
 
-  // @keyframes fade-in {
-  //   0% {
-  //     opacity: 0;
-  //   }
-  //   50% {
-  //     opacity: 0;
-  //   }
-  //   100% {
-  //     opacity: 1;
-  //   }
-  // }
+//   // @keyframes fade-in {
+//   //   0% {
+//   //     opacity: 0;
+//   //   }
+//   //   50% {
+//   //     opacity: 0;
+//   //   }
+//   //   100% {
+//   //     opacity: 1;
+//   //   }
+//   // }
 
-  // @keyframes fade-out {
-  //   0% {
-  //     opacity: 1;
-  //   }
-  //   50% {
-  //     opacity: 0;
-  //   }
-  //   100% {
-  //     opacity: 0;
-  //   }
-  // }
+//   // @keyframes fade-out {
+//   //   0% {
+//   //     opacity: 1;
+//   //   }
+//   //   50% {
+//   //     opacity: 0;
+//   //   }
+//   //   100% {
+//   //     opacity: 0;
+//   //   }
+//   // }
 
-  .mat-tab-group.mat-primary .mat-ink-bar,
-  .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-    background-color: #ffcd36;
-  }
+//   .mat-tab-group.mat-primary .mat-ink-bar,
+//   .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+//     background-color: #ffcd36;
+//   }
 
-  // tab button color
-  .mat-tab-label .mat-tab-label-content {
-    color: #000;
-    font-size: 1rem;
-  }
-}
+//   // tab button color
+//   .mat-tab-label .mat-tab-label-content {
+//     color: #000;
+//     font-size: 1rem;
+//   }
+// }
 
-//
+// //
 
-.nail1 {
-  background-image: url("../../../../assets/images/treatments/nails/nails1.jpg");
-}
+// .nail1 {
+//   background-image: url("../../../../assets/images/treatments/nails/nails1.jpg");
+// }
 
-.nail2 {
-  background-image: url("../../../../assets/images/treatments/nails/nails2.jpg");
-}
+// .nail2 {
+//   background-image: url("../../../../assets/images/treatments/nails/nails2.jpg");
+// }
 
-.nail3 {
-  background-image: url("../../../../assets/images/treatments/nails/nails3.jpg");
-}
+// .nail3 {
+//   background-image: url("../../../../assets/images/treatments/nails/nails3.jpg");
+// }
 
-//
+// //
 
-.facial1 {
-  background-image: url("../../../../assets/images/treatments/facial/facial1.jpg");
-}
+// .facial1 {
+//   background-image: url("../../../../assets/images/treatments/facial/facial1.jpg");
+// }
 
-.facial2 {
-  background-image: url("../../../../assets/images/treatments/facial/facial5.jpg");
-}
+// .facial2 {
+//   background-image: url("../../../../assets/images/treatments/facial/facial5.jpg");
+// }
 
-.facial3 {
-  background-image: url("../../../../assets/images/treatments/facial/facial5.jpg");
-}
+// .facial3 {
+//   background-image: url("../../../../assets/images/treatments/facial/facial5.jpg");
+// }
 
-//
+// //
 
-.lashes1 {
-  background-image: url("../../../../assets/images/treatments/lashes/lash2.jpg");
-}
+// .lashes1 {
+//   background-image: url("../../../../assets/images/treatments/lashes/lash2.jpg");
+// }
 
-.lashes2 {
-  background-image: url("../../../../assets/images/treatments/lashes/brows.jpg");
-}
+// .lashes2 {
+//   background-image: url("../../../../assets/images/treatments/lashes/brows.jpg");
+// }
 
-.lashes3 {
-  background-image: url("../../../../assets/images/treatments/lashes/lashes1.jpg");
-}
+// .lashes3 {
+//   background-image: url("../../../../assets/images/treatments/lashes/lashes1.jpg");
+// }
 
-@media only screen and (max-width: 650px) {
-  .gallary-wrapper {
-    .gallary {
-      grid-column-gap: 00px;
-      grid-template-columns: 1fr 1fr;
-      div:nth-child(3) {
-        display: none;
-      }
-    }
-  }
+// @media only screen and (max-width: 650px) {
+//   .gallary-wrapper {
+//     .gallary {
+//       grid-column-gap: 00px;
+//       grid-template-columns: 1fr 1fr;
+//       div:nth-child(3) {
+//         display: none;
+//       }
+//     }
+//   }
 
-  .tab-image {
-    border-radius: 0;
-  }
-}
+//   .tab-image {
+//     border-radius: 0;
+//   }
+// }

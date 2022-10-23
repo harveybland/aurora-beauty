@@ -1,6 +1,10 @@
+.contact-img {
+  background-image: url("../../../assets/images/banners/banner2.jpg");
+}
+
 .contact-details {
   // background-color: #e4e0dd !important;
-  padding: 120px 0px 40px 0px;
+  padding: 60px 0;
   display: flex;
   justify-content: space-between;
   div:nth-child(2) {
@@ -178,8 +182,11 @@
 
 @media screen and (max-width: 500px) {
   .contact-details {
-    padding: 100px 0px 40px 0px;
+    padding: 45px 0;
     flex-direction: column;
+  }
+  .contact-form {
+    padding-bottom: 20px;
   }
   .contact {
     padding: 20px 0 0 0px;
