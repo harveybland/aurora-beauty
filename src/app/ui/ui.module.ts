@@ -21,9 +21,17 @@ const routes: Routes = [
         path: 'treatments',
         loadChildren: () => import('./treatments/treatments.module').then(o => o.TreatmentsModule),
       },
+      // {
+      //   path: 'skincare',
+      //   loadChildren: () => import('./skincare/skincare.module').then(o => o.SkincareModule),
+      // },
       {
-        path: 'skincare',
-        loadChildren: () => import('./skincare/skincare.module').then(o => o.SkincareModule),
+        path: 'decleor',
+        loadChildren: () => import('./decleor/decleor.module').then(o => o.MillionModule),
+      },
+      {
+        path: 'million',
+        loadChildren: () => import('./million/million.module').then(o => o.MillionModule),
       },
       {
         path: 'products',

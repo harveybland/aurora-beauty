@@ -19,10 +19,12 @@ export class HeaderV2Component implements OnInit {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 50) {
       document.querySelector('.nav')!.classList.add('nav-color');
       document.querySelectorAll('.nav-links li').forEach(el => el!.classList.add('nav-link-color'));
+      document.querySelector('.dropdown-wrapper')!.classList.add('allow');
       // document.querySelector('.contact-button')!.classList.add('contact-button-color');
     } else {
       document.querySelector('.nav')!.classList.remove('nav-color');
       document.querySelectorAll('.nav-links li').forEach(el => el!.classList.remove('nav-link-color'))
+      document.querySelector('.dropdown-wrapper')!.classList.remove('allow');
       // document.querySelector('.contact-button')!.classList.remove('contact-button-color');
     }
   }

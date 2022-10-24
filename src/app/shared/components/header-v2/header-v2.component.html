@@ -17,8 +17,12 @@
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
       <a routerLink="/treatments" (click)="setNav()">Beauty Treatments</a>
     </li>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
-      <a routerLink="/skincare" (click)="setNav()">Skincare</a>
+    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="dropdown-wrapper">
+      <a (click)="setNav()" class="skincare">Skincare</a>
+      <div class="dropdown open">
+        <a routerLink="/decleor" (click)="setNav()">Decleor</a>
+        <a routerLink="/million" (click)="setNav()">Million Dollar</a>
+      </div>
     </li>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
       <a routerLink="/products" (click)="setNav()">Products</a>
