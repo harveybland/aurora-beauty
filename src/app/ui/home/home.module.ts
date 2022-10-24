@@ -5,7 +5,6 @@ import { HomeComponent } from './home.component';
 import { NgxGlideModule } from 'ngx-glide';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
-import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [
   {
@@ -24,7 +23,6 @@ const routes: Routes = [
   ],
   declarations: [
     HomeComponent,
-    TabsComponent
   ]
 })
 export class HomeModule { }

@@ -1,6 +1,5 @@
 import { Title } from '@angular/platform-browser';
-import { ModalComponent } from './modal/modal.component';
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
@@ -64,12 +63,6 @@ export class HomeComponent implements OnInit {
   //     this.scrollfunction = function () { }
   //   }
   // }
-
-  openDialog() {
-    this.dialog.open(ModalComponent, {
-      maxWidth: '768px'
-    });
-  }
 
 }
 
