@@ -26,6 +26,12 @@
         <a routerLink="/million" (click)="setNav()">Million Dollar</a>
       </div>
     </div>
+    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+      <a routerLink="/decleor" (click)="setNav()">Decleor</a>
+    </li>
+    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+      <a routerLink="/million" (click)="setNav()">Million Dollar</a>
+    </li>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
       <a routerLink="/products" (click)="setNav()">Products</a>
     </li>

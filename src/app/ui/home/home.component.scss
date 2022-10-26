@@ -108,7 +108,9 @@ button {
   flex-wrap: wrap;
   gap: 30px;
   padding: 80px 20px 50px;
-  background: #ede9e6;
+  max-width: 1480px;
+  margin: 0 auto;
+
   .home-cards-item {
     display: flex;
     flex-direction: column;
@@ -142,10 +144,11 @@ button {
     .home-cards-text {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       flex-direction: column;
       padding: 20px;
       background-color: #fff;
+      min-height: 260px;
       h2 {
         width: 220px;
         text-align: center;
