@@ -1,12 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MillionComponent } from './million.component';
+import { WaxingComponent } from './waxing.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MillionComponent,
+    component: WaxingComponent,
   }
 ];
 
@@ -15,6 +15,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
   ],
-  declarations: [MillionComponent]
+  declarations: [WaxingComponent]
 })
-export class MillionModule { }
+export class WaxingModule { }

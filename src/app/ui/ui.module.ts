@@ -17,21 +17,29 @@ const routes: Routes = [
         path: 'about',
         loadChildren: () => import('./about/about.module').then(o => o.AboutModule),
       },
-      {
-        path: 'treatments',
-        loadChildren: () => import('./treatments/treatments.module').then(o => o.TreatmentsModule),
-      },
       // {
-      //   path: 'skincare',
-      //   loadChildren: () => import('./skincare/skincare.module').then(o => o.SkincareModule),
+      //   path: 'treatments',
+      //   loadChildren: () => import('./treatments/treatments.module').then(o => o.TreatmentsModule),
       // },
       {
-        path: 'decleor',
-        loadChildren: () => import('./decleor/decleor.module').then(o => o.MillionModule),
+        path: 'skincare',
+        loadChildren: () => import('./skincare/skincare.module').then(o => o.SkincareModule),
       },
       {
-        path: 'million',
-        loadChildren: () => import('./million/million.module').then(o => o.MillionModule),
+        path: 'hands',
+        loadChildren: () => import('./nails/nails.module').then(o => o.NailsModule),
+      },
+      {
+        path: 'lashes',
+        loadChildren: () => import('./lashes/lashes.module').then(o => o.LashesModule),
+      },
+      {
+        path: 'waxing',
+        loadChildren: () => import('./waxing/waxing.module').then(o => o.WaxingModule),
+      },
+      {
+        path: 'massage',
+        loadChildren: () => import('./massage/massage.module').then(o => o.MassageModule),
       },
       {
         path: 'products',

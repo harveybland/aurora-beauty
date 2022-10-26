@@ -14,23 +14,32 @@
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
       <a routerLink="/about" (click)="setNav()">About Us</a>
     </li>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
-      <a routerLink="/treatments" (click)="setNav()">Beauty Treatments</a>
-    </li>
     <div class="dropdown-wrapper">
       <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
-        <a (click)="setNav()" class="skincare">Skincare</a>
+        <a (click)="setNav()">Treatments</a>
       </li>
       <div class="dropdown open">
-        <a routerLink="/decleor" (click)="setNav()">Decleor</a>
-        <a routerLink="/million" (click)="setNav()">Million Dollar</a>
+        <a routerLink="/hands">Hands & Feet</a>
+        <a routerLink="/lashes">Lashes & Brows</a>
+        <a routerLink="/waxing">Waxing</a>
+        <a routerLink="/massage">Masssage</a>
+        <a routerLink="/skincare">Advanced Facials</a>
       </div>
     </div>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
-      <a routerLink="/decleor" (click)="setNav()">Decleor</a>
+      <a routerLink="/hands" (click)="setNav()">Hands & Feet</a>
     </li>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
-      <a routerLink="/million" (click)="setNav()">Million Dollar</a>
+      <a routerLink="/lashes" (click)="setNav()">Lashes & Brows</a>
+    </li>
+    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+      <a routerLink="/waxing" (click)="setNav()">Waxing</a>
+    </li>
+    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+      <a routerLink="/massage" (click)="setNav()">Massage</a>
+    </li>
+    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+      <a routerLink="/skincare" (click)="setNav()">Advanced Facials</a>
     </li>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
       <a routerLink="/products" (click)="setNav()">Products</a>
