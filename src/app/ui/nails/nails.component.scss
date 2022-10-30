@@ -12,6 +12,12 @@ h2 {
   margin-bottom: 20px;
 }
 
+.nail-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
 .polish-list {
   display: flex;
 }
@@ -128,6 +134,16 @@ ul {
   transition: all 1.8s;
   &.on {
     opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fade-left {
+  transform: translate(45px, 0);
+  transition: all 0.7s;
+  position: relative;
+  z-index: 1;
+  &.on {
     transform: translate(0, 0);
   }
 }
