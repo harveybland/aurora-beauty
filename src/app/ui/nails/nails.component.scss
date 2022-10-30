@@ -1,48 +1,69 @@
 .treatments {
   background-image: url("../../../assets/images/products/nails.jpg");
   background-size: auto;
-  background-color: #f2a6b2;
+  background-color: #f4c8bd;
 }
 
-.template-wrapper {
-  box-shadow: 0 4px 5px #00000021;
+section {
+  padding: 30px 0;
 }
 
-.template-header {
+h2 {
+  margin-bottom: 20px;
+}
+
+.polish-list {
+  display: flex;
+}
+
+.polish-block {
   display: grid;
-  grid-template-columns: 1fr;
-  padding: 15px 20px;
-  color: #000;
-  top: 96px;
-  z-index: 1;
-  position: sticky;
-  // border-radius: 4px;
-  border-bottom: 1px solid #000;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-.template-info {
+.biab-block {
   display: grid;
-  grid-template-columns: 1fr 100px;
-  color: #333;
-  padding: 15px 20px;
-  font-size: 1.1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.extra-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ececec;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  p {
+    line-height: 1.4em;
+    margin: 5px 0 5px;
+    font-size: var(--p-desktop);
+  }
+  h4 {
+    font-size: 1.9rem;
+    margin: 5px 0 5px;
   }
 }
 
-.treatment-block {
-  margin: 20px 0 60px;
-}
-
-p {
-  color: #585657;
-  margin-bottom: 17px;
-  line-height: 1.5em;
-  font-size: 1rem;
+ul {
+  flex: 1;
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 7px;
+    line-height: 1.4em;
+    span {
+      margin-right: 5px;
+      color: #ebbdbd;
+    }
+  }
 }
 
 // Gallery
@@ -77,6 +98,37 @@ p {
         filter: grayscale(0);
       }
     }
+  }
+}
+
+// Animations
+.fadeIn {
+  opacity: 0;
+  transform: translate(0, 35px);
+  transition: all 0.7s;
+  &.on {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fadeIn-slow {
+  opacity: 0;
+  transform: translate(0, 35px);
+  transition: all 1.3s;
+  &.on {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fadeIn-slower {
+  opacity: 0;
+  transform: translate(0, 35px);
+  transition: all 1.8s;
+  &.on {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
