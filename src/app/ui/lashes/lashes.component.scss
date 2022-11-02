@@ -4,65 +4,9 @@
   background-color: #ffe6ea;
 }
 
-section {
-  padding: 0 0 30px 0px;
-  margin-bottom: 30px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-.block {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #f4dad9;
-  padding: 20px;
-  border-radius: 6px;
-  text-align: center;
-  p {
-    line-height: 1.4em;
-    margin: 5px 0 5px;
-    font-size: var(--p-desktop);
-  }
-  h4 {
-    font-size: 1.9rem;
-    margin: 5px 0 5px;
-  }
-}
-
 p {
   color: #585657;
   margin-bottom: 17px;
   line-height: 1.5em;
   font-size: 1rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  &.m {
-    margin-bottom: 40px;
-  }
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  h2 {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }
