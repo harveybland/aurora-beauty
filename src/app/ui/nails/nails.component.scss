@@ -38,6 +38,9 @@ h2 {
   display: grid;
   grid-template-columns: 340px 1fr;
   padding-bottom: 15px;
+  ul {
+    padding: 0;
+  }
 }
 
 .block {
@@ -142,7 +145,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
   .polish-block {
     grid-template-columns: 1fr;
   }
@@ -153,6 +156,9 @@ ul {
     grid-template-columns: 1fr;
   }
   .nail-grid {
+    grid-template-columns: 1fr;
+  }
+  .list-grid {
     grid-template-columns: 1fr;
   }
 }
