@@ -91,6 +91,11 @@ nav {
     z-index: 1;
     opacity: 1;
   }
+  &.treatments {
+    &:hover {
+      color: #fff !important;
+    }
+  }
 }
 
 .nav-links li a:hover::before {

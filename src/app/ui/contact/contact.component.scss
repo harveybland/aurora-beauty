@@ -3,7 +3,7 @@
 }
 
 .contact-details {
-  padding: 60px 0;
+  padding: 20px 0 60px 0;
   display: flex;
   justify-content: space-between;
   div:nth-child(2) {
@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: space-around;
   background: #ffd0c7;
-  border-radius: 10px 100px;
+  border-radius: 10px 80px;
   .contact-info {
     color: #000;
     font-size: 1rem;
@@ -99,6 +99,18 @@
   }
 }
 
+.import-info {
+  padding: 20px;
+  border: solid 2px#ffcd36;
+  margin-bottom: 50px;
+  div {
+    padding: 20px 0 0;
+    h3 {
+      padding-bottom: 10px;
+    }
+  }
+}
+
 ::ng-deep google-map {
   .map-container {
     width: 100% !important;
@@ -115,6 +127,6 @@
     padding-bottom: 20px;
   }
   .contact {
-    padding: 20px 0 0 0px;
+    padding: 35px;
   }
 }

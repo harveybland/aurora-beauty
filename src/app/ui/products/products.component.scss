@@ -11,7 +11,13 @@
   max-width: 1400px;
   gap: 20px;
   margin: 0 auto;
-  padding: 0 0 60px 0;
+  padding: 0 20px 60px 20px;
+  .product {
+    padding: 0 20px;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 13%);
+    border-top: 8px solid #faa8ac;
+    border-radius: 8px 8px 0 0;
+  }
   h2 {
     padding-bottom: 20px;
     text-align: center;
@@ -29,5 +35,48 @@
     margin-bottom: 17px;
     line-height: 1.5em;
     font-size: 1rem;
+  }
+}
+
+// Animations
+.fadeIn {
+  opacity: 0;
+  transform: translate(0, 35px);
+  transition: all 0.7s;
+  &.on {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fadeIn-slow {
+  opacity: 0;
+  transform: translate(0, 35px);
+  transition: all 1.3s;
+  &.on {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fadeIn-slower {
+  opacity: 0;
+  transform: translate(0, 35px);
+  transition: all 1.8s;
+  &.on {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .products-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -74,7 +74,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #ececec;
+    background-color: #f4dad9;
     padding: 40px 20px;
     width: 50%;
     border-radius: 6px;
@@ -86,10 +86,6 @@
     h4 {
       font-size: 1.9rem;
       margin: 5px 0 5px;
-    }
-    &:hover {
-      filter: brightness(90%);
-      transition: all 400ms ease-in-out;
     }
   }
   .block-logo {
@@ -106,7 +102,7 @@
 .block {
   display: flex;
   justify-content: space-evenly;
-  background-color: #ececec;
+  background-color: #f4dad9;
   padding: 20px;
   border-radius: 6px;
   text-align: center;
@@ -118,10 +114,6 @@
   h4 {
     font-size: 1.9rem;
     margin: 5px 0 5px;
-  }
-  &:hover {
-    filter: brightness(90%);
-    transition: all 400ms ease-in-out;
   }
   &.block-right {
     div {
