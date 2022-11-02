@@ -16,7 +16,7 @@ h2 {
 .block {
   display: flex;
   justify-content: space-evenly;
-  background-color: #ececec;
+  background-color: #f4dad9;
   padding: 20px;
   border-radius: 6px;
   text-align: center;
@@ -42,6 +42,11 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   h2 {
     text-align: center;
   }
