@@ -5,11 +5,15 @@
 }
 
 section {
-  padding: 30px 0px;
+  padding: 0 0 50px 0px;
 }
 
 h2 {
   margin-bottom: 15px;
+}
+
+.padding {
+  padding-bottom: 15px;
 }
 
 .nail-grid {
@@ -28,6 +32,12 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  padding-bottom: 15px;
 }
 
 .block {
@@ -95,37 +105,6 @@ ul {
         filter: grayscale(0);
       }
     }
-  }
-}
-
-// Animations
-.fadeIn {
-  opacity: 0;
-  transform: translate(0, 35px);
-  transition: all 0.7s;
-  &.on {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.fadeIn-slow {
-  opacity: 0;
-  transform: translate(0, 35px);
-  transition: all 1.3s;
-  &.on {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.fadeIn-slower {
-  opacity: 0;
-  transform: translate(0, 35px);
-  transition: all 1.8s;
-  &.on {
-    opacity: 1;
-    transform: translate(0, 0);
   }
 }
 

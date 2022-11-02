@@ -14,7 +14,7 @@
 }
 
 .container {
-  padding: 30px 0;
+  padding: 0 0 50px 0;
   h2 {
     font-size: var(--h2-desktop);
     margin-bottom: 15px;
@@ -123,57 +123,6 @@
       flex-direction: column;
       justify-content: center;
     }
-  }
-}
-
-// Animations
-.fadeIn {
-  opacity: 0;
-  transform: translate(0, 35px);
-  transition: all 0.7s;
-  &.on {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.fadeIn-slow {
-  opacity: 0;
-  transform: translate(0, 35px);
-  transition: all 1.3s;
-  &.on {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.fadeIn-slower {
-  opacity: 0;
-  transform: translate(0, 35px);
-  transition: all 1.8s;
-  &.on {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-.fade-right {
-  transform: translate(-45px, 0);
-  transition: all 0.7s;
-  position: relative;
-  z-index: 1;
-  &.on {
-    transform: translate(0, 0);
-  }
-}
-
-.fade-left {
-  transform: translate(45px, 0);
-  transition: all 0.7s;
-  position: relative;
-  z-index: 1;
-  &.on {
-    transform: translate(0, 0);
   }
 }
 
