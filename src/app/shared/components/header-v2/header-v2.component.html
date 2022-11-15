@@ -1,6 +1,8 @@
 <nav class="nav">
   <div class="logo">
-    <img class="logo" src="assets/images/shared/Logo2-removebg-previeww.png" alt="aurora beauty logo" />
+    <a routerLink="/home">
+      <img class="logo" src="assets/images/shared/Logo2-removebg-previeww.png" alt="aurora beauty logo" />
+    </a>
   </div>
   <div class="hamburger" [ngClass]="active ? 'toggle' : ''" (click)="burger()">
     <div class="bars1"></div>
