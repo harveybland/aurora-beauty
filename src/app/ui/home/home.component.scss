@@ -45,7 +45,7 @@ video {
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
-    // transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
     top: 0;
     &:hover {
       top: -4px;
@@ -116,7 +116,7 @@ video {
 }
 
 .review-wrapper {
-  margin: 50px 0 70px;
+  margin: 50px 0;
   .flex {
     h2 {
       color: #333;
@@ -149,6 +149,7 @@ video {
     }
     span {
       margin-top: 15px;
+      font-size: 0.9rem;
     }
     &:hover {
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.26);

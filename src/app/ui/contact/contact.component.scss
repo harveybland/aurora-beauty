@@ -14,14 +14,14 @@
 .contact {
   padding: 0px 35px;
   position: relative;
-  color: #000;
+  color: #333;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background: #ffd0c7;
   border-radius: 10px 80px;
   .contact-info {
-    color: #000;
+    color: #333;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
       margin: 10px 0px;
       font-size: 1rem;
       svg {
-        fill: #000;
+        fill: #333;
         width: 20px;
         height: 20px;
         margin-right: 15px;
@@ -44,13 +44,13 @@
   }
   .contact-links {
     svg {
-      fill: #000;
+      fill: #333;
       width: 30px;
       height: 30px;
       display: block;
     }
     .icon {
-      color: #000;
+      color: #333;
     }
   }
 }
@@ -59,13 +59,16 @@
   form {
     display: flex;
     flex-direction: column;
+    color: #333;
 
     h2 {
       margin-bottom: 5px;
+      color: #333;
     }
 
     p {
       font-size: 1rem;
+      color: #333;
       font-weight: 500;
     }
 
@@ -105,8 +108,10 @@
   margin-bottom: 50px;
   div {
     padding: 20px 0 0;
+    color: #333;
     h3 {
       padding-bottom: 10px;
+      color: #333;
     }
   }
 }
