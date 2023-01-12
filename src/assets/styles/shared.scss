@@ -40,7 +40,7 @@
   padding: 30px 0 30px;
   background: #ede9e6;
   h1 {
-    font-size: 2rem;
+    font-size: var(--h1-desktop);
     color: #333;
   }
 }
@@ -48,11 +48,11 @@
 // main text
 .text {
   text-align: center;
-  margin: 30px 0 20px;
+  margin: 35px 0 30px;
   h1 {
-    font-size: 1.7rem;
+    font-size: var(--h1-desktop);
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: 2px solid #ffcd36;
     padding-bottom: 5px;
     font-family: "Kameron", serif;
@@ -61,9 +61,9 @@
   }
   p {
     color: #585657;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
     line-height: 1.5em;
-    font-size: 1rem;
+    font-size: var(--p-desktop);
   }
 }
 

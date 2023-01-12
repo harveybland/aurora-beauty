@@ -1,7 +1,7 @@
 section {
   padding: 0 0 60px 0px;
   h2 {
-    font-size: 1.4rem;
+    font-size: var(--h2-desktop);
     margin-bottom: 10px;
     color: #333;
   }
@@ -21,9 +21,10 @@ section {
     font-size: var(--p-desktop);
   }
   h4 {
-    font-size: 1.9rem;
+    font-size: var(--h4-desktop);
     margin: 5px 0 5px;
     color: #333;
+    font-weight: var(--font-bold);
   }
 }
 
@@ -51,10 +52,13 @@ section {
     flex-direction: column;
     justify-content: space-between;
   }
-  h2 {
+  h3 {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: var(--h3-desktop);
     color: #333;
+    font-weight: var(--font-bold);
+    margin-bottom: 7px;
+    text-transform: uppercase;
   }
 }
 

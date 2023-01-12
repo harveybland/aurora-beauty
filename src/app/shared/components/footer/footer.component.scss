@@ -13,6 +13,7 @@ footer {
   }
   p {
     padding: 10px 0;
+    font-size: var(--p-desktop);
   }
 }
 
@@ -47,9 +48,11 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   h2 {
+    font-size: var(--h2-desktop);
     color: #585657;
   }
   p {
+    font-size: var(--p-desktop);
     padding-top: 10px;
   }
   a {

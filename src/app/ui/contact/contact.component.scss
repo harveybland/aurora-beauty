@@ -27,6 +27,7 @@
     flex-direction: column;
     h2 {
       margin-bottom: 20px;
+      font-size: var(--h2-desktop);
     }
     div {
       display: flex;
@@ -62,6 +63,7 @@
     color: #333;
 
     h2 {
+      font-size: var(--h2-desktop);
       margin-bottom: 5px;
       color: #333;
     }
@@ -69,7 +71,7 @@
     p {
       font-size: 1rem;
       color: #333;
-      font-weight: 500;
+      font-weight: var(--font-medium);
     }
 
     input {
@@ -110,6 +112,7 @@
     padding: 20px 0 0;
     color: #333;
     h3 {
+      font-size: var(--h3-desktop);
       padding-bottom: 10px;
       color: #333;
     }

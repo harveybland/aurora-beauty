@@ -10,14 +10,13 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: 70px;
-  border-top: 12px solid #f4dad9;
+  border-top: 5px solid #f4dad9;
 }
 
 .employee-img {
   background-color: #f4dad9;
-  height: fit-content;
   position: relative;
-  cursor: pointer;
+  // cursor: pointer;
   &:hover .overlay {
     opacity: 0.65;
   }
@@ -52,7 +51,7 @@
       text-align: center;
       border-bottom: 3px solid #f4dad9;
       line-height: 0.1em;
-      font-size: 1.7rem;
+      font-size: var(--h2-desktop);
       margin: 10px 0 35px;
       color: #333;
       span {
