@@ -21,11 +21,11 @@
         <a (click)="setNav()">Treatments</a>
       </li>
       <div class="dropdown open">
-        <a routerLink="/hands">Hands & Feet</a>
-        <a routerLink="/lashes">Lashes & Brows</a>
-        <a routerLink="/waxing">Waxing</a>
-        <a routerLink="/massage">Masssage</a>
-        <a routerLink="/skincare">Advanced Facials</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/hands">Hands & Feet</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/lashes">Lashes & Brows</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/waxing">Waxing</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/massage">Masssage</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/skincare">Advanced Facials</a>
       </div>
     </div>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">

@@ -20,14 +20,14 @@ nav {
     height: 75px;
     display: block;
     padding-left: 20px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
   }
 }
 
 /* Styling Navigation Links*/
 .nav-links {
   display: flex;
-  padding: 0 0.7vw;
+  padding: 0 12px;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -37,7 +37,7 @@ nav {
 .nav-links li a {
   margin: 0 0.7vw;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 12px;
   margin: 0;
   height: 97px;
   display: flex;
@@ -142,10 +142,10 @@ ul .dropdown-wrapper {
 ul .dropdown {
   display: none;
   position: absolute;
-  width: 200px;
+  width: 185px;
   background-color: #585657;
   color: #000;
-  right: -50px;
+  right: -35px;
   top: 85px;
   padding: 5px;
   border-radius: 5px;
@@ -160,17 +160,21 @@ ul .dropdown-wrapper:hover .dropdown {
 }
 
 ul .dropdown a {
-  padding: 10px 10px;
+  padding: 8px 10px;
+  margin: 2px 0;
   display: flex;
   align-items: center;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0;
   color: #fff;
   text-transform: none;
   width: 100%;
   justify-content: center;
   height: auto;
+  &.is-active {
+    color: #585657;
+    background-color: #ffcd36;
+  }
 }
 
 ul .dropdown a:hover {
@@ -205,7 +209,8 @@ ul .dropdown a:hover {
       padding-top: 7px;
     }
     a {
-      font-size: 21px;
+      font-weight: 400 !important;
+      font-size: 1.3rem;
     }
   }
   .hamburger {
