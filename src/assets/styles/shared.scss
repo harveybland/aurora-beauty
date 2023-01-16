@@ -229,7 +229,7 @@ button {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .text {
     h1 {
       font-size: var(--h1-mobile);
@@ -241,5 +241,9 @@ button {
 
   .btn {
     font-size: var(--button-fs);
+  }
+
+  .flex {
+    margin: 10px 0;
   }
 }
