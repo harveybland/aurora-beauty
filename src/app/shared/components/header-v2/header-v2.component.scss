@@ -97,28 +97,6 @@ nav {
   width: 80%;
 }
 
-/*Buttons Styling*/
-.contact-button {
-  padding: 0.6rem 0.8rem;
-  margin-left: 2vw;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: transparent;
-  border: 2px solid #585657;
-  border-radius: 2em;
-  height: auto !important;
-  transition: all ease-out 400ms;
-  &.contact-button-color {
-    border: 2px solid #f2f5f7;
-  }
-}
-
-.contact-button-color:hover {
-  color: #000;
-  background-color: #ffcd36 !important;
-  border: 2px solid #ffcd36;
-}
-
 /*Navigation Icon Styling*/
 .hamburger div {
   width: 30px;
@@ -144,7 +122,7 @@ ul .dropdown {
   position: absolute;
   width: 185px;
   background-color: #585657;
-  color: #000;
+  color: #333;
   right: -35px;
   top: 85px;
   padding: 5px;
