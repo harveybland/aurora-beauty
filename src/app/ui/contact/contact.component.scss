@@ -19,7 +19,7 @@
 .contact {
   padding: 0px 35px;
   position: relative;
-  color: #333;
+  color: var(--color-text-main);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,7 +27,7 @@
   border-radius: 10px 80px;
   min-height: 370px;
   .contact-info {
-    color: #333;
+    color: var(--color-text-main);
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -35,6 +35,7 @@
       margin-bottom: 20px;
       font-family: var(--font-family-second);
       font-size: var(--h2-desktop);
+      letter-spacing: var(--letter-spacing);
     }
     div {
       display: flex;
@@ -42,7 +43,7 @@
       margin: 10px 0px;
       font-size: 1rem;
       svg {
-        fill: #333;
+        fill: var(--color-text-main);
         width: 20px;
         height: 20px;
         margin-right: 15px;
@@ -52,13 +53,13 @@
   }
   .contact-links {
     svg {
-      fill: #333;
+      fill: var(--color-text-main);
       width: 30px;
       height: 30px;
       display: block;
     }
     .icon {
-      color: #333;
+      color: var(--color-text-main);
     }
   }
 }
@@ -67,18 +68,19 @@
   form {
     display: flex;
     flex-direction: column;
-    color: #333;
+    color: var(--color-text-main);
 
     h2 {
       font-size: var(--h2-desktop);
       margin-bottom: 5px;
-      color: #333;
+      color: var(--color-text-main);
       font-family: var(--font-family-second);
+      letter-spacing: var(--letter-spacing);
     }
 
     p {
       font-size: 1rem;
-      color: #333;
+      color: var(--color-text-main);
       font-weight: var(--font-medium);
     }
 
@@ -116,13 +118,21 @@
   padding: 20px;
   border: solid 2px#ffcd36;
   margin-bottom: 50px;
+  h2 {
+    font-size: var(--h2-desktop);
+    color: var(--color-text-main);
+    font-family: var(--font-family-second);
+    letter-spacing: var(--letter-spacing);
+  }
   div {
     padding: 20px 0 0;
-    color: #333;
+    color: var(--color-text-main);
     h3 {
       font-size: var(--h3-desktop);
+      font-family: var(--font-family-second);
+      letter-spacing: var(--letter-spacing);
       padding-bottom: 10px;
-      color: #333;
+      color: var(--color-text-main);
     }
   }
 }
@@ -140,7 +150,7 @@
 
 @media screen and (max-width: 500px) {
   .contact-details {
-    padding: 45px 0;
+    padding: 20px 0 50px;
     flex-direction: column;
     align-items: center;
   }

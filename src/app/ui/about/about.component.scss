@@ -53,20 +53,21 @@
       line-height: 0.1em;
       font-size: var(--h2-desktop);
       margin: 10px 0 35px;
-      color: #333;
+      color: var(--color-text-main);
       span {
         background: #fff;
         padding: 0 10px;
         font-family: var(--font-family-second);
         font-weight: var(--font-bold);
         font-size: var(--h1-desktop);
+        letter-spacing: var(--letter-spacing);
       }
     }
     p {
       padding-bottom: 10px;
       font-size: 1rem;
       line-height: 1.4em;
-      color: #333;
+      color: var(--color-text-main);
     }
   }
   .contact-links {
@@ -77,7 +78,7 @@
         width: 30px;
         height: 30px;
         display: block;
-        fill: #333;
+        fill: var(--color-text-main);
       }
     }
   }

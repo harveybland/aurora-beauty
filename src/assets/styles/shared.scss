@@ -41,7 +41,7 @@
   background: #ede9e6;
   h1 {
     font-size: var(--h1-desktop);
-    color: #333;
+    color: var(--color-text-main);
   }
 }
 
@@ -51,11 +51,12 @@
   margin: 35px 0 30px;
   h1 {
     font-size: var(--h1-desktop);
-    color: #333;
+    color: var(--color-text-main);
     margin-bottom: 20px;
     border-bottom: 2px solid #ffcd36;
     padding-bottom: 5px;
     font-family: var(--font-family-second);
+    letter-spacing: var(--letter-spacing);
     text-transform: uppercase;
     letter-spacing: 0.8px;
   }
@@ -82,7 +83,7 @@ button {
 
 .btn {
   background-color: #ffcd36;
-  color: #333;
+  color: var(--color-text-main);
   display: flex;
   align-items: center;
   font-size: 1.2rem;

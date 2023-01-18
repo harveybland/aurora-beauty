@@ -24,8 +24,9 @@
   h2 {
     padding-bottom: 15px;
     font-size: var(--h2-desktop);
-    color: #333;
+    color: var(--color-text-main);
     font-family: var(--font-family-second);
+    letter-spacing: var(--letter-spacing);
   }
   .img-wrapper {
     display: flex;

@@ -101,6 +101,7 @@ video {
           padding: 0 10px;
           font-family: var(--font-family-second);
           font-size: var(--h2-desktop);
+          letter-spacing: var(--letter-spacing);
         }
       }
       p {
@@ -120,13 +121,14 @@ video {
   margin: 50px 0;
   .flex {
     h2 {
-      color: #333;
+      color: var(--color-text-main);
       margin-bottom: 30px;
       border-bottom: 2px solid #ffcd36;
       padding-bottom: 7px;
       font-size: var(--h1-desktop);
       font-family: var(--font-family-second);
       font-weight: var(--font-bold);
+      letter-spacing: var(--letter-spacing);
     }
   }
   .carousel-review {
