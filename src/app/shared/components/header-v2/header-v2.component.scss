@@ -31,7 +31,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
 }
 
 .nav-links li a {
@@ -42,7 +42,7 @@ nav {
   height: 97px;
   display: flex;
   align-items: center;
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
 }
 
 .nav-links li {
@@ -207,7 +207,8 @@ ul .dropdown a:hover {
       height: auto;
       a {
         height: auto;
-        padding: 14px;
+        padding: 14px 14px 12px;
+        font-size: 1.1rem;
       }
     }
   }
@@ -318,7 +319,7 @@ ul .dropdown a:hover {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .logo {
     img {
       height: 60px;

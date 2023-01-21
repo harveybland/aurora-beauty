@@ -1,11 +1,11 @@
+.section {
+  margin: 0 0 30px;
+}
+
 .treatments {
   background-image: url("../../../assets/images/banners/healthcare.jpg");
   background-size: auto;
-  background-color: #ebbdbd;
-}
-
-.section {
-  margin: 0 0 30px 0;
+  background-color: #f4dad9;
 }
 
 .decleor-block-info {
@@ -226,7 +226,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .container-text {
     flex-direction: column;
   }

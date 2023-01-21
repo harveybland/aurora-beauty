@@ -11,11 +11,13 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        loadChildren: () => import('./home/home.module').then(o => o.HomeModule),
+        loadChildren: () =>
+          import('./home/home.module').then((o) => o.HomeModule),
       },
       {
         path: 'about',
-        loadChildren: () => import('./about/about.module').then(o => o.AboutModule),
+        loadChildren: () =>
+          import('./about/about.module').then((o) => o.AboutModule),
       },
       // {
       //   path: 'treatments',
@@ -23,47 +25,60 @@ const routes: Routes = [
       // },
       {
         path: 'skincare',
-        loadChildren: () => import('./skincare/skincare.module').then(o => o.SkincareModule),
+        loadChildren: () =>
+          import('./skincare/skincare.module').then((o) => o.SkincareModule),
+      },
+      {
+        path: 'skincare/decleor',
+        loadChildren: () =>
+          import('./decleor/decleor.module').then((o) => o.MillionModule),
+      },
+      {
+        path: 'skincare/skinbase',
+        loadChildren: () =>
+          import('./skinbase/skinbase.module').then((o) => o.SkinbaseModule),
       },
       {
         path: 'hands',
-        loadChildren: () => import('./nails/nails.module').then(o => o.NailsModule),
+        loadChildren: () =>
+          import('./nails/nails.module').then((o) => o.NailsModule),
       },
       {
         path: 'lashes',
-        loadChildren: () => import('./lashes/lashes.module').then(o => o.LashesModule),
+        loadChildren: () =>
+          import('./lashes/lashes.module').then((o) => o.LashesModule),
       },
       {
         path: 'waxing',
-        loadChildren: () => import('./waxing/waxing.module').then(o => o.WaxingModule),
+        loadChildren: () =>
+          import('./waxing/waxing.module').then((o) => o.WaxingModule),
       },
       {
         path: 'massage',
-        loadChildren: () => import('./massage/massage.module').then(o => o.MassageModule),
+        loadChildren: () =>
+          import('./massage/massage.module').then((o) => o.MassageModule),
       },
       {
         path: 'products',
-        loadChildren: () => import('./products/products.module').then(o => o.ProductsModule),
+        loadChildren: () =>
+          import('./products/products.module').then((o) => o.ProductsModule),
       },
       {
         path: 'contact',
-        loadChildren: () => import('./contact/contact.module').then(o => o.ContactModule),
+        loadChildren: () =>
+          import('./contact/contact.module').then((o) => o.ContactModule),
       },
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'home'
-      }
-    ]
-  }
+        redirectTo: 'home',
+      },
+    ],
+  },
 ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    CoreModule,
-    RouterModule.forChild(routes)
-  ],
-  declarations: [UiComponent]
+  imports: [CommonModule, CoreModule, RouterModule.forChild(routes)],
+  declarations: [UiComponent],
 })
-export class UiModule { }
+export class UiModule {}

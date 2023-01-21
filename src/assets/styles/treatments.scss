@@ -84,3 +84,13 @@ section {
     grid-template-columns: 1fr;
   }
 }
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  a {
+    padding: 20px;
+  }
+}
