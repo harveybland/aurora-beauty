@@ -81,6 +81,12 @@ section {
   a {
     padding: 0 15px 10px;
     border-bottom: 2px solid #585657;
+    font-family: var(--font-family-second);
+    font-size: 1.3rem;
+    color: var(--color-text-main);
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    text-transform: uppercase;
     &.is-active {
       border-bottom: 2px solid #ffcd36;
     }
