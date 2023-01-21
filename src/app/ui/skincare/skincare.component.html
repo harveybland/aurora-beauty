@@ -2,11 +2,10 @@
     <div class="banner treatments"></div>
 </div>
 
-
 <div class="brands">
-    <a [routerLink]="['million']">million</a>
-    <a [routerLink]="['decleor']">decleor</a>
-    <a [routerLink]="['skinbase']">skinbase</a>
+    <a [routerLink]="['million']" [routerLinkActive]="['is-active']">million</a>
+    <a [routerLink]="['decleor']" [routerLinkActive]="['is-active']">decleor</a>
+    <a [routerLink]="['skinbase']" [routerLinkActive]="['is-active']">skinbase</a>
 </div>
 
 <div class="content" [@routerAnimation]="getRouteAnimation(router)">

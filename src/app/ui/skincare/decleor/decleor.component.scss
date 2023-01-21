@@ -8,20 +8,13 @@
   background-color: #f4dad9;
 }
 
-.decleor-block-info {
-  text-align: center;
-  p {
-    padding-bottom: 10px;
-  }
-}
-
 .logo {
   display: flex;
   justify-content: center;
 }
 
 .container {
-  padding: 30px 0;
+  padding: 0 0 50px 0;
   h2 {
     font-size: var(--h2-desktop);
     margin-bottom: 15px;
@@ -57,6 +50,7 @@
       align-items: flex-start;
       margin-bottom: 7px;
       line-height: 1.4em;
+      color: var(--color-text-main);
       span {
         margin-right: 5px;
         color: #ebbdbd;
@@ -82,7 +76,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #ececec;
+    background-color: #f4dad9;
     padding: 40px 20px;
     width: 50%;
     border-radius: 6px;
@@ -92,13 +86,8 @@
       font-size: var(--p-desktop);
     }
     h4 {
-      font-size: 1.9rem;
       font-size: var(--h4-desktop);
       margin: 5px 0 5px;
-    }
-    &:hover {
-      filter: brightness(90%);
-      transition: all 400ms ease-in-out;
     }
   }
   .block-logo {
@@ -115,7 +104,7 @@
 .block {
   display: flex;
   justify-content: space-evenly;
-  background-color: #ececec;
+  background-color: #f4dad9;
   padding: 20px;
   border-radius: 6px;
   text-align: center;
@@ -128,10 +117,6 @@
   h4 {
     font-size: var(--h4-desktop);
     margin: 5px 0 5px;
-  }
-  &:hover {
-    filter: brightness(90%);
-    transition: all 400ms ease-in-out;
   }
   &.block-right {
     div {

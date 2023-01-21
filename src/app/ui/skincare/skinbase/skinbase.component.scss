@@ -3,9 +3,14 @@
 }
 
 .treatments {
-  background-image: url("../../../assets/images/banners/healthcare.jpg");
+  background-image: url("../../../../assets/images/banners/healthcare.jpg");
   background-size: auto;
   background-color: #f4dad9;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
 }
 
 .container-flex {

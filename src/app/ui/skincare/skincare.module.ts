@@ -7,10 +7,10 @@ import { MillionComponent } from './million/million.component';
 import { SkinbaseComponent } from './skinbase/skinbase.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: SkincareComponent,
-  },
+  // {
+  //   path: '',
+  //   component: SkincareComponent,
+  // },
   {
     path: 'million',
     component: MillionComponent,
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'skinbase',
     component: SkinbaseComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'million',
   },
 ];
 
