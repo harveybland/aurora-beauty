@@ -29,16 +29,6 @@ const routes: Routes = [
           import('./skincare/skincare.module').then((o) => o.SkincareModule),
       },
       {
-        path: 'skincare/decleor',
-        loadChildren: () =>
-          import('./decleor/decleor.module').then((o) => o.MillionModule),
-      },
-      {
-        path: 'skincare/skinbase',
-        loadChildren: () =>
-          import('./skinbase/skinbase.module').then((o) => o.SkinbaseModule),
-      },
-      {
         path: 'hands',
         loadChildren: () =>
           import('./nails/nails.module').then((o) => o.NailsModule),

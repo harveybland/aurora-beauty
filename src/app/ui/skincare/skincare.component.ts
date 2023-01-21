@@ -1,21 +1,22 @@
-import { AnimationService } from './../../shared/animation.service';
-import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { routerAnimation } from './animations/animations';
 
 @Component({
   selector: 'app-skincare',
   templateUrl: './skincare.component.html',
-  styleUrls: ['./skincare.component.scss']
+  styleUrls: ['./skincare.component.scss'],
+  animations: [routerAnimation()],
 })
-export class SkincareComponent implements OnInit {
+export class SkincareComponent {
+  constructor() {}
 
-  constructor(private titleService: Title,
-    private _animation: AnimationService) {
-    this.titleService.setTitle("Skincare - Aurora Beauty");
-  }
+  public getRouteAnimation(outlet: RouterOutlet) {
+    const res =
+      outlet.activatedRouteData.num === undefined
+        ? -1
+        : outlet.activatedRouteData.num;
 
-  ngOnInit() {
-    window.scrollTo(0, 0);
-    this._animation.animation();
+    return res;
   }
 }

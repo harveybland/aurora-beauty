@@ -1,0 +1,261 @@
+.section {
+  margin: 0 0 30px;
+}
+
+.treatments {
+  background-image: url("../../../../assets/images/banners/healthcare.jpg");
+  background-size: auto;
+  background-color: #f4dad9;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 0 0 50px 0;
+  h2 {
+    font-size: var(--h2-desktop);
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 0px 0 12px;
+    font-size: var(--p-desktop);
+    line-height: 1.4em;
+  }
+  h3 {
+    font-size: var(--h3-desktop);
+    margin-bottom: 15px;
+  }
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  .container-block-1 {
+    display: flex;
+  }
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    flex: 1;
+  }
+  ul {
+    flex: 1;
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 7px;
+      line-height: 1.4em;
+      color: var(--color-text-main);
+      span {
+        margin-right: 5px;
+        color: #ebbdbd;
+      }
+    }
+  }
+  img {
+    flex: 1;
+    height: 230px;
+    width: 100%;
+    display: block;
+  }
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f4dad9;
+    padding: 40px 20px;
+    width: 50%;
+    border-radius: 6px;
+    p {
+      line-height: 1.4em;
+      margin: 5px 0 5px;
+      font-size: var(--p-desktop);
+    }
+    h4 {
+      font-size: var(--h4-desktop);
+      margin: 5px 0 5px;
+    }
+  }
+  .block-logo {
+    background: #fff;
+    &:hover {
+      background-color: #fff;
+    }
+    img {
+      height: auto;
+    }
+  }
+}
+
+.block {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f4dad9;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  p {
+    line-height: 1.4em;
+    margin: 5px 0 5px;
+    font-weight: 400;
+    font-size: var(--p-desktop);
+  }
+  h4 {
+    font-size: var(--h4-desktop);
+    margin: 5px 0 5px;
+  }
+  &.block-right {
+    div {
+      width: 170px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.img-1 {
+  img {
+    height: 248px;
+  }
+}
+
+.img-2 {
+  img {
+    height: 350px;
+  }
+}
+
+.img-3 {
+  img {
+    height: 330px;
+  }
+}
+
+.img-4 {
+  img {
+    height: 320px;
+  }
+}
+
+.img-5 {
+  img {
+    height: auto;
+    width: auto;
+  }
+}
+
+.img-6 {
+  img {
+    height: 370px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .container-flex {
+    flex-direction: column;
+    .container-text {
+      padding-right: 0px;
+    }
+  }
+  .img-1 {
+    display: none;
+  }
+  .img-2 {
+    margin-top: 20px;
+  }
+  .img-3 {
+    margin-top: 20px;
+  }
+  .img-4 {
+    margin-bottom: 20px;
+  }
+  .img-5 {
+    margin-top: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  .img-6 {
+    display: none;
+  }
+  .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    div {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-text {
+    flex-direction: column;
+  }
+  .container-block-1 {
+    flex-direction: column;
+  }
+  .blocks {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    div {
+      padding: 20px;
+    }
+  }
+  .block {
+    &.block-right {
+      margin-top: 20px;
+    }
+  }
+  .img-1 {
+    display: none;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .img-2 {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .img-3 {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .img-4 {
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .img-5 {
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

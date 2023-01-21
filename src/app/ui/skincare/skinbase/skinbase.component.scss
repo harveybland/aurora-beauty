@@ -1,0 +1,38 @@
+.section {
+  margin: 0 0 30px;
+}
+
+.treatments {
+  background-image: url("../../../assets/images/banners/healthcare.jpg");
+  background-size: auto;
+  background-color: #f4dad9;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  .container-block-1 {
+    display: flex;
+  }
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    flex: 1;
+  }
+  ul {
+    flex: 1;
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 7px;
+      line-height: 1.4em;
+      color: var(--color-text-main);
+      span {
+        margin-right: 5px;
+        color: #ebbdbd;
+      }
+    }
+  }
+}
