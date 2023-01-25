@@ -39,6 +39,9 @@
   justify-content: space-between;
   .container-block-1 {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
   }
   .container-text {
     display: flex;
@@ -118,6 +121,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .container-flex {
+    .container-block-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   .images {
     flex-direction: column;
     gap: 10px;
