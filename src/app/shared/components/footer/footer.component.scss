@@ -4,19 +4,24 @@ footer {
   padding: 25px 0 35px 0;
 }
 
-.footer-logo {
+.logo {
+  display: flex;
+  justify-content: center;
   img {
     width: 250px;
     height: 75px;
   }
+}
+
+.footer-logo {
   p {
-    padding: 10px 0;
+    padding: 0px 0 10px;
     font-size: var(--p-desktop);
   }
 }
 
 .footerPages {
-  padding: 40px 20px 0;
+  padding: 0px 20px 0;
   color: #eee;
   ul {
     display: flex;
@@ -51,7 +56,6 @@ footer {
   }
   p {
     font-size: var(--p-desktop);
-    padding-top: 10px;
     color: #eee;
   }
   a {
