@@ -315,6 +315,8 @@ ul .dropdown a:hover {
   .logo {
     img {
       padding-left: 15px;
+      padding-bottom: 0;
+      padding-top: 3px;
     }
   }
 }
@@ -322,7 +324,7 @@ ul .dropdown a:hover {
 @media screen and (max-width: 500px) {
   .logo {
     img {
-      height: 60px;
+      height: 50px;
     }
   }
 }
