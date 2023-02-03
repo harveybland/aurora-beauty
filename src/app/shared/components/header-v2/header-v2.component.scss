@@ -52,7 +52,7 @@ nav {
   align-items: center;
   cursor: pointer;
   &.nav-link-color:hover {
-    color: #ffcd36;
+    color: #d2c1b9;
     transition: all ease-in-out 400ms;
   }
   &.nav-link-color::after {
@@ -76,7 +76,7 @@ nav {
     opacity: 1;
   }
   &.nav-link-color.is-active {
-    color: #ffcd36;
+    color: #d2c1b9;
   }
   &.nav-link-color.is-active::after {
     content: "";
@@ -151,13 +151,13 @@ ul .dropdown a {
   height: auto;
   &.is-active {
     color: #585657;
-    background-color: #ffcd36;
+    background-color: #d2c1b9;
   }
 }
 
 ul .dropdown a:hover {
   color: #585657;
-  background-color: #ffcd36;
+  background-color: #d2c1b9;
 }
 
 // burger
@@ -315,6 +315,8 @@ ul .dropdown a:hover {
   .logo {
     img {
       padding-left: 15px;
+      padding-bottom: 0;
+      padding-top: 3px;
     }
   }
 }
@@ -322,7 +324,7 @@ ul .dropdown a:hover {
 @media screen and (max-width: 500px) {
   .logo {
     img {
-      height: 60px;
+      height: 50px;
     }
   }
 }

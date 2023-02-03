@@ -22,8 +22,11 @@ video {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   margin: 40px 0 30px;
+  div img {
+    height: 68px;
+  }
 }
 
 .carousel-wrapper {
@@ -252,6 +255,10 @@ video {
     p {
       font-size: var(--p-mobile);
     }
+  }
+
+  .brand-banner {
+    gap: 20px;
   }
 
   .review-wrapper {
