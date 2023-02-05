@@ -20,6 +20,12 @@
     border-radius: 8px 0px 0 8px;
     display: grid;
     grid-template-columns: 180px 1fr;
+    p {
+      margin-bottom: 10px;
+      &:last-child {
+        font-weight: 500;
+      }
+    }
   }
   h2 {
     padding-bottom: 15px;
@@ -38,7 +44,6 @@
   }
   p {
     color: #585657;
-    margin-bottom: 17px;
     line-height: 1.5em;
     font-size: var(--p-desktop);
   }
