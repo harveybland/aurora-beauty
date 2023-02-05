@@ -111,4 +111,12 @@ section {
   .grid {
     grid-template-columns: 1fr;
   }
+  .block {
+    p {
+      font-size: var(--p-mobile);
+    }
+    h4 {
+      font-size: var(--h4-mobile);
+    }
+  }
 }

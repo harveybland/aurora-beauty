@@ -31,11 +31,39 @@ ul {
   }
 }
 
+.block-prices {
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  h4 {
+    margin: 0;
+    span {
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.block-sm-prices {
+  h4 {
+    margin: 0;
+    span {
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+  }
+}
+
 @media screen and (max-width: 530px) {
   ul {
     padding-bottom: 20px;
   }
   .list-grid {
     grid-template-columns: 1fr;
+  }
+
+  .block-prices {
+    flex-direction: column;
+    gap: 0px;
   }
 }
