@@ -185,6 +185,7 @@ ul .dropdown a:hover {
     &.nav-color {
       padding-bottom: 11px;
       padding-top: 7px;
+      height: 80px;
     }
     a {
       font-weight: 400 !important;
@@ -321,10 +322,10 @@ ul .dropdown a:hover {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .logo {
     img {
-      height: 50px;
+      height: 55px;
     }
   }
 }

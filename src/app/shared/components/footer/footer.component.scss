@@ -123,6 +123,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .logo {
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .footerPages {
     display: flex;
