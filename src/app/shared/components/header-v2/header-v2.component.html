@@ -1,7 +1,11 @@
 <nav class="nav">
   <div class="logo">
     <a routerLink="/home">
-      <img class="logo" src="assets/images/shared/new-logo.png" alt="aurora beauty logo" />
+      <img
+        class="logo"
+        src="assets/images/shared/new-logo.png"
+        alt="aurora beauty logo"
+      />
     </a>
   </div>
   <div class="hamburger" [ngClass]="active ? 'toggle' : ''" (click)="burger()">
@@ -21,26 +25,52 @@
         <a (click)="setNav()">Treatments</a>
       </li>
       <div class="dropdown open">
-        <a [routerLinkActive]="['is-active']" routerLink="/hands">Hands & Feet</a>
-        <a [routerLinkActive]="['is-active']" routerLink="/lashes">Lashes & Brows</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/hands"
+          >Hands & Feet</a
+        >
+        <a [routerLinkActive]="['is-active']" routerLink="/lashes"
+          >Lashes & Brows</a
+        >
         <a [routerLinkActive]="['is-active']" routerLink="/waxing">Waxing</a>
         <a [routerLinkActive]="['is-active']" routerLink="/massage">Masssage</a>
-        <a [routerLinkActive]="['is-active']" routerLink="/skincare">Advanced Facials</a>
+        <a [routerLinkActive]="['is-active']" routerLink="/skincare"
+          >Advanced Facials</a
+        >
       </div>
     </div>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+    <li
+      [ngClass]="active ? 'fade' : ''"
+      [routerLinkActive]="['is-active']"
+      class="mobile"
+    >
       <a routerLink="/hands" (click)="setNav()">Hands & Feet</a>
     </li>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+    <li
+      [ngClass]="active ? 'fade' : ''"
+      [routerLinkActive]="['is-active']"
+      class="mobile"
+    >
       <a routerLink="/lashes" (click)="setNav()">Lashes & Brows</a>
     </li>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+    <li
+      [ngClass]="active ? 'fade' : ''"
+      [routerLinkActive]="['is-active']"
+      class="mobile"
+    >
       <a routerLink="/waxing" (click)="setNav()">Waxing</a>
     </li>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+    <li
+      [ngClass]="active ? 'fade' : ''"
+      [routerLinkActive]="['is-active']"
+      class="mobile"
+    >
       <a routerLink="/massage" (click)="setNav()">Massage</a>
     </li>
-    <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']" class="mobile">
+    <li
+      [ngClass]="active ? 'fade' : ''"
+      [routerLinkActive]="['is-active']"
+      class="mobile"
+    >
       <a routerLink="/skincare" (click)="setNav()">Advanced Facials</a>
     </li>
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
@@ -49,8 +79,13 @@
     <li [ngClass]="active ? 'fade' : ''" [routerLinkActive]="['is-active']">
       <a routerLink="/contact" (click)="setNav()">Contact</a>
     </li>
-    <!-- <li [ngClass]="active ? 'fade' : ''">
-      <a class="contact-button" href="https://aurorabeautyclitheroe.book.app/book-now" target="_blank">Book now</a>
-    </li> -->
+    <li [ngClass]="active ? 'fade' : ''">
+      <a
+        class="contact-button"
+        href="https://aurorabeautyclitheroe.book.app/book-now"
+        target="_blank"
+        >Book now</a
+      >
+    </li>
   </ul>
 </nav>
